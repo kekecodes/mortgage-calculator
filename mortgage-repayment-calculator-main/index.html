@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/66bac51810.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+    <div class="container">
+      <div class="inner-box">
+        <div class="left-side">
+          <div class="left-header">
+            <h1>Mortgage Calculator</h1>
+            <p class="clear-all-text">Clear All</p>
+          </div>
+          <form action="#">
+            <div class="input-group">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <input type="text" id="mortgage-amount" name="mortgage-amount">
+           	  <span class="input-group-text" id="basic-addon1">R</span>
+			</div>
+            <div class="input-group">
+              <div class="half-input-container">
+                <div class="half-input">
+                 <label for="mortgage-term">Mortgage Term</label>
+				 
+                  <input type="text" id="mortgage-term" name="mortgage-term">
+                <span class="input-group-text" id="basic-addon1">Years</span>
+				</div>
+                <div class="half-input">
+                  <label for="interest-rate">Interest Rate</label>
+				  <input type="text" id="interest-rate" name="interest-rate">
+               <span class="input-group-text" id="basic-addon1">%</span>
+                 
+				</div>
+              </div>
+            </div>
+            <div class="input-group radio-group">
+              <label>Mortgage Type</label>
+              <div class="radio-option">
+                <input type="radio" id="fixed-rate" name="mortgage-type" value="fixed" checked>
+                <label for="fixed-rate">Fixed Rate</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="variable-rate" name="mortgage-type" value="variable">
+                <label for="variable-rate">Variable Rate</label>
+              </div>
+            </div>
+            <button type="submit"><i class="fas fa-calculator"></i> Calculate Repayments</button>
+          </form>
+        </div>
+        <div class="right-side">
+          <img src="https://i.ibb.co/5v1VwGy/Schermata-2024-07-11-alle-21-36-43.png" alt="Calculator" class="calculator-img">
+          <p>Results shown here</p>
+          <p class="small-text">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+		  <div class="results-container" style="display: none;"> <p id="result-text"></p>
+		  </div>
+		</div>
+      </div>
+    </div>
+ <script src="index.js"></script>
+</body>
+</html>
